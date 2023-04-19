@@ -1,0 +1,188 @@
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Hello World!\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/endButton\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"15dp\"\r\n        android:layout_marginTop=\"507dp\"\r\n        android:layout_marginEnd=\"52dp\"\r\n        android:layout_marginBottom=\"169dp\"\r\n        android:text=\"@string/buttonText\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/startButton\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView2\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"174dp\"\r\n        android:layout_marginTop=\"54dp\"\r\n        android:layout_marginEnd=\"175dp\"\r\n        android:layout_marginBottom=\"41dp\"\r\n        android:text=\"@string/someTextInput\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/endButton\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/startButton\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"52dp\"\r\n        android:layout_marginTop=\"507dp\"\r\n        android:layout_marginEnd=\"15dp\"\r\n        android:layout_marginBottom=\"169dp\"\r\n        android:text=\"Button\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toStartOf=\"@+id/endButton\"\r\n        app:layout_constraintHorizontal_bias=\"0.063\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.0\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	(revision 40221a83f44e4b98d086e9bb5a48fca559075f9e)
++++ b/app/src/main/res/layout/activity_main.xml	(date 1681883504181)
+@@ -10,54 +10,65 @@
+         android:id="@+id/textView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:text="Hello World!"
+-        app:layout_constraintBottom_toBottomOf="parent"
++        android:layout_marginTop="299dp"
++        android:layout_marginBottom="213dp"
++        android:text="0"
++        app:layout_constraintBottom_toTopOf="@+id/reset"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+     <Button
+-        android:id="@+id/endButton"
++        android:id="@+id/decrement"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="15dp"
+-        android:layout_marginTop="507dp"
++        android:layout_marginTop="450dp"
+         android:layout_marginEnd="52dp"
+         android:layout_marginBottom="169dp"
+         android:text="@string/buttonText"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toEndOf="@+id/startButton"
+-        app:layout_constraintTop_toTopOf="parent" />
+-
+-    <TextView
+-        android:id="@+id/textView2"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="174dp"
+-        android:layout_marginTop="54dp"
+-        android:layout_marginEnd="175dp"
+-        android:layout_marginBottom="41dp"
+-        android:text="@string/someTextInput"
+-        app:layout_constraintBottom_toTopOf="@+id/endButton"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/textView" />
++        app:layout_constraintStart_toEndOf="@+id/increment"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.0" />
+ 
+     <Button
+-        android:id="@+id/startButton"
++        android:id="@+id/increment"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="52dp"
+-        android:layout_marginTop="507dp"
++        android:layout_marginTop="450dp"
+         android:layout_marginEnd="15dp"
+         android:layout_marginBottom="169dp"
+         android:text="Button"
+         app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintEnd_toStartOf="@+id/endButton"
++        app:layout_constraintEnd_toStartOf="@+id/decrement"
+         app:layout_constraintHorizontal_bias="0.063"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.0" />
+ 
++    <Button
++        android:id="@+id/reset"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="156dp"
++        android:layout_marginTop="20dp"
++        android:layout_marginEnd="161dp"
++        android:layout_marginBottom="140dp"
++        android:text="Button"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/increment" />
++
++    <androidx.constraintlayout.widget.Guideline
++        android:id="@+id/guideline"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:orientation="vertical"
++        app:layout_constraintGuide_begin="205dp" />
++
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/myapplication/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.myapplication\r\n\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport android.os.Bundle\r\nimport android.widget.TextView\r\nimport android.widget.Toast\r\n\r\nclass MainActivity : AppCompatActivity() {\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        setContentView(R.layout.activity_main)\r\n\r\n        val startButton: TextView = findViewById(R.id.startButton)\r\n        val endButton: TextView = findViewById(R.id.endButton)\r\n        val factText = \"BC <3 Gini\"\r\n        val fictionText = \"BC prefers cats over dogs\"\r\n        val duration = Toast.LENGTH_LONG\r\n        startButton.text = \"Get Fact\"\r\n        endButton.text = \"Get Fiction\"\r\n        val factToast = Toast.makeText(applicationContext, factText, duration)\r\n        val fictionToast = Toast.makeText(applicationContext, fictionText, duration)\r\n\r\n        startButton.setOnClickListener {\r\n            if (startButton.text == \"Get Fact\") {\r\n                startButton.text = \"Get Fiction\"\r\n                endButton.text = \"Get Fact\"\r\n                factToast.show()\r\n\r\n            } else {\r\n                startButton.text = \"Get Fact\"\r\n                endButton.text = \"Get Fiction\"\r\n                fictionToast.show()\r\n\r\n            }\r\n        }\r\n\r\n        endButton.setOnClickListener {\r\n            if (endButton.text == \"Get Fiction\") {\r\n                endButton.text = \"Get Fact\"\r\n                startButton.text = \"Get Fiction\"\r\n                fictionToast.show()\r\n\r\n            } else {\r\n                endButton.text = \"Get Fiction\"\r\n                startButton.text = \"Get Fact\"\r\n                factToast.show()\r\n            }\r\n        }\r\n\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/myapplication/MainActivity.kt b/app/src/main/java/com/example/myapplication/MainActivity.kt
+--- a/app/src/main/java/com/example/myapplication/MainActivity.kt	(revision 40221a83f44e4b98d086e9bb5a48fca559075f9e)
++++ b/app/src/main/java/com/example/myapplication/MainActivity.kt	(date 1681883886210)
+@@ -2,49 +2,45 @@
+ 
+ import androidx.appcompat.app.AppCompatActivity
+ import android.os.Bundle
++import android.widget.Button
+ import android.widget.TextView
+ import android.widget.Toast
+ 
++
+ class MainActivity : AppCompatActivity() {
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+         setContentView(R.layout.activity_main)
+ 
+-        val startButton: TextView = findViewById(R.id.startButton)
+-        val endButton: TextView = findViewById(R.id.endButton)
+-        val factText = "BC <3 Gini"
+-        val fictionText = "BC prefers cats over dogs"
+-        val duration = Toast.LENGTH_LONG
+-        startButton.text = "Get Fact"
+-        endButton.text = "Get Fiction"
+-        val factToast = Toast.makeText(applicationContext, factText, duration)
+-        val fictionToast = Toast.makeText(applicationContext, fictionText, duration)
+-
+-        startButton.setOnClickListener {
+-            if (startButton.text == "Get Fact") {
+-                startButton.text = "Get Fiction"
+-                endButton.text = "Get Fact"
+-                factToast.show()
+-
+-            } else {
+-                startButton.text = "Get Fact"
+-                endButton.text = "Get Fiction"
+-                fictionToast.show()
++        val increment: Button = findViewById(R.id.increment)
++        val decrement: Button = findViewById(R.id.decrement)
++        val reset: Button = findViewById(R.id.reset)
++        val displayCount: TextView = findViewById(R.id.textView)
++        displayCount.textSize = 48f
++        var count = 0
++        var message = ""
++        val duration = Toast.LENGTH_SHORT
++        increment.text = "Increment"
++        decrement.text = "Decrement"
++        reset.text = "Reset"
++        val toast = Toast.makeText(applicationContext, message, duration)
+ 
+-            }
++        increment.setOnClickListener {
++            toast.setText("Previous value: $count \nNext Value: ${++count + 1}")
++            displayCount.text = count.toString()
++            toast.show()
+         }
+ 
+-        endButton.setOnClickListener {
+-            if (endButton.text == "Get Fiction") {
+-                endButton.text = "Get Fact"
+-                startButton.text = "Get Fiction"
+-                fictionToast.show()
+-
+-            } else {
+-                endButton.text = "Get Fiction"
+-                startButton.text = "Get Fact"
+-                factToast.show()
+-            }
++        decrement.setOnClickListener {
++            toast.setText("Previous value: $count \nNext Value: ${--count - 1}")
++            displayCount.text = count.toString()
++            toast.show()
++        }
++        reset.setOnClickListener{
++            toast.setText("Previous value: $count \nNext Value: 0")
++            displayCount.text = "0"
++            count = 0
++            toast.show()
+         }
+ 
+ 
