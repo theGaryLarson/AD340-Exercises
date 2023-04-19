@@ -2,4 +2,6 @@
     <string name="app_name">My Application</string>
     <string name="someTextInput">Hello BC!</string>
     <string name="buttonText">BUTTON</string>
+    <string name="food">Food</string>
+    <string name="touch">Touch</string>
 </resources>
