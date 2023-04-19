@@ -10,14 +10,41 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val ourTextView: TextView = findViewById(R.id.textView)
-        val button: TextView = findViewById(R.id.button1)
-        val text = "Test message"
+        val startButton: TextView = findViewById(R.id.startButton)
+        val endButton: TextView = findViewById(R.id.endButton)
+        val factText = "BC <3 Gini"
+        val fictionText = "BC prefers cats over dogs"
         val duration = Toast.LENGTH_LONG
-        button.text = "Click Me!"
-        val toast = Toast.makeText(applicationContext, text, duration)
-        button.setOnClickListener {
-            toast.show()
+        startButton.text = "Get Fact"
+        endButton.text = "Get Fiction"
+        val factToast = Toast.makeText(applicationContext, factText, duration)
+        val fictionToast = Toast.makeText(applicationContext, fictionText, duration)
+
+        startButton.setOnClickListener {
+            if (startButton.text == "Get Fact") {
+                startButton.text = "Get Fiction"
+                endButton.text = "Get Fact"
+                factToast.show()
+
+            } else {
+                startButton.text = "Get Fact"
+                endButton.text = "Get Fiction"
+                fictionToast.show()
+
+            }
+        }
+
+        endButton.setOnClickListener {
+            if (endButton.text == "Get Fiction") {
+                endButton.text = "Get Fact"
+                startButton.text = "Get Fiction"
+                fictionToast.show()
+
+            } else {
+                endButton.text = "Get Fiction"
+                startButton.text = "Get Fact"
+                factToast.show()
+            }
         }
 
 
