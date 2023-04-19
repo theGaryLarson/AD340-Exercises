@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="someTextInput">Hello BC!</string>
+    <string name="buttonText">BUTTON</string>
+</resources>
